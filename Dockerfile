@@ -51,7 +51,7 @@ RUN apt-get install -y \
 	htmldoc \
 	aspell \
 	links \
-	ttf-mscorefonts-installer \
+#	ttf-mscorefonts-installer \
 	mono-complete
 RUN apt-get install apache2 libapache2-mod-php7.0 -y
 RUN apt-get install mariadb-common mariadb-server mariadb-client -y
