@@ -6,7 +6,7 @@ LABEL Description="Cutting-edge LAMP stack, based on Ubuntu 16.04 LTS. Includes 
 	Version="1.0"
 
 RUN apt-get update
-RUN apt-get upgrade -y
+
 
 COPY debconf.selections /tmp/
 RUN debconf-set-selections /tmp/debconf.selections
