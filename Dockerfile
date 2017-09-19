@@ -73,7 +73,7 @@ RUN a2enmod rewrite
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN chmod +x /usr/sbin/run-lamp.sh
 RUN chown -R www-data:www-data /var/www/html
-RUN git clone https://github.com/huggla/MindTouch_Core.git /var/www/
+RUN git clone https://github.com/huggla/MindTouch_Core.git /var/www/html/deki
 
 VOLUME /var/www/html
 VOLUME /var/log/httpd
