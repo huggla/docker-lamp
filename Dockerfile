@@ -37,7 +37,7 @@ RUN apt-get install -y \
 	php7.0-pspell \
 	php7.0-readline \
 	php7.0-recode \
-	php7.0-snmp \
+#	php7.0-snmp \
 	php7.0-sqlite3 \
 	php7.0-sybase \
 	php7.0-tidy \
@@ -47,12 +47,12 @@ RUN apt-get install -y \
 	wv \
 	poppler-utils \
 	html2text \
-	html2ps \
+#	html2ps \
 	htmldoc \
 	aspell \
-	links \
+	links 
 #	ttf-mscorefonts-installer \
-	mono-complete
+#	mono-complete
 RUN apt-get install apache2 libapache2-mod-php7.0 -y
 RUN apt-get install mariadb-common mariadb-server mariadb-client -y
 RUN apt-get install postfix -y
