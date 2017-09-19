@@ -1,4 +1,4 @@
-FROM blitznote/debootstrap-amd64:16.04
+FROM ubuntu
 
 LABEL Description="Cutting-edge LAMP stack, based on Ubuntu 16.04 LTS. Includes .htaccess support and popular PHP7 features, including composer and mail() function." \
 	License="Apache License 2.0" \
@@ -37,7 +37,7 @@ RUN apt-get install -y \
 	php7.0-pspell \
 	php7.0-readline \
 	php7.0-recode \
-#	php7.0-snmp \
+	php7.0-snmp \
 	php7.0-sqlite3 \
 	php7.0-sybase \
 	php7.0-tidy \
@@ -47,12 +47,12 @@ RUN apt-get install -y \
 	wv \
 	poppler-utils \
 	html2text \
-#	html2ps \
+	html2ps \
 	htmldoc \
 	aspell \
-	links 
-#	ttf-mscorefonts-installer \
-#	mono-complete
+	links \
+	ttf-mscorefonts-installer \
+	mono-complete
 RUN apt-get install apache2 libapache2-mod-php7.0 -y
 RUN apt-get install mariadb-common mariadb-server mariadb-client -y
 RUN apt-get install postfix -y
