@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.04
 
 LABEL Description="Cutting-edge LAMP stack, based on Ubuntu 16.04 LTS. Includes .htaccess support and popular PHP7 features, including composer and mail() function." \
 	License="Apache License 2.0" \
@@ -51,7 +51,7 @@ RUN apt-get install -y \
 	htmldoc \
 	aspell \
 	links \
-	ttf-mscorefonts-installer \
+#	ttf-mscorefonts-installer \
 	mono-complete
 RUN apt-get install apache2 libapache2-mod-php7.0 -y
 RUN apt-get install mariadb-common mariadb-server mariadb-client -y
