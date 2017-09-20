@@ -12,6 +12,7 @@ COPY debconf.selections /tmp/
 RUN debconf-set-selections /tmp/debconf.selections
 
 RUN apt-get install -y \
+        apt-transport-https \
 	php7.0 \
 	php7.0-bz2 \
 	php7.0-cgi \
