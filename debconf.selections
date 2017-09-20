@@ -2,3 +2,4 @@ postfix postfix/mailname string localhost
 postfix postfix/main_mailer_type string 'Docker Postfix'
 maria-db mysql-server/root_password password password
 maria-db mysql-server/root_password_again password password
+ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true
