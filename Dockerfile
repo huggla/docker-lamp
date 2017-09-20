@@ -68,8 +68,10 @@ ENV TERM dumb
 
 COPY index.php /var/www/html/
 COPY run-lamp.sh /usr/sbin/
+COPY deki.conf /etc/apache2/sites-available/
 
 RUN a2enmod rewrite
+RUN a2enmod proxy
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN chmod +x /usr/sbin/run-lamp.sh
 RUN chown -R www-data:www-data /var/www/html
