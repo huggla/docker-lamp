@@ -7,7 +7,7 @@ function exportBoolean {
             export ${1}='Yes.'
     fi
 }
-
+chown -R www-data:www-data /var/www/html
 exportBoolean LOG_STDOUT
 exportBoolean LOG_STDERR
 
