@@ -44,6 +44,7 @@ RUN apt-get install -y \
 	php7.0-tidy \
 	php7.0-xmlrpc \
 	php7.0-xsl \
+	php7.0-mbstring \
 	imagemagick \
 	wv \
 	poppler-utils \
