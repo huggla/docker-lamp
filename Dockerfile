@@ -77,7 +77,7 @@ RUN a2enmod proxy
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN chmod +x /usr/sbin/run-lamp.sh
 RUN chown -R www-data:www-data /var/www/html
-RUN wget http://www.princexml.com/download/prince_11.3-1_ubuntu16.04_amd64.deb && dpkg -i prince_11.3-1_ubuntu16.04_amd64.deb
+RUN curl -O http://www.princexml.com/download/prince_11.3-1_ubuntu16.04_amd64.deb && dpkg -i prince_11.3-1_ubuntu16.04_amd64.deb
 RUN git clone https://github.com/huggla/MindTouch_Core.git /var/www/html/deki
 
 VOLUME /var/www/html
