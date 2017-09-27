@@ -74,6 +74,7 @@ COPY deki.conf /etc/apache2/sites-available/
 
 RUN a2enmod rewrite
 RUN a2enmod proxy
+RUN a2ensite deki
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN chmod +x /usr/sbin/run-lamp.sh
 RUN chown -R www-data:www-data /var/www/html
